@@ -1,18 +1,14 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Header = ({ headerText }) => {
-  const { viewStyle, textStyle } = styles;
-
-  return (
-    <View style={viewStyle}>
-      <Text style={textStyle}>{headerText}</Text>
-    </View>
-  );
-};
+const Header = ({ headerText }) => (
+  <View style={styles.view}>
+    <Text style={styles.text}>{headerText}</Text>
+  </View>
+);
 
 const styles = {
-  viewStyle: {
+  view: {
     alignItems: 'center',
     backgroundColor: '#F8F8F8',
     elevation: 2,
@@ -25,7 +21,7 @@ const styles = {
     shadowOpacity: 0.2,
   },
 
-  textStyle: {
+  text: {
     fontSize: 20,
   }
 };

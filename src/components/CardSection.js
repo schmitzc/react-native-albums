@@ -2,13 +2,13 @@ import React from 'react';
 import { View } from 'react-native';
 
 const CardSection = ({ children }) => (
-  <View style={styles.containerStyle}>
+  <View style={styles.container}>
     {children}
   </View>
 );
 
 const styles = {
-  containerStyle: {
+  container: {
     backgroundColor: '#fff',
     borderBottomWidth: 1,
     borderColor: '#ddd',
